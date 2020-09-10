@@ -29,10 +29,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-#     message.channel.send('hey you!')
-#     print('author')
     if message.author == client.user:
-#         print('yes')
         return
         
 
@@ -42,7 +39,7 @@ async def on_message(message):
     
     if message.content.startswith('$thumb'):
         channel = message.channel
-        await channel.send('Send me that 👍 reaction, mate')
+        await channel.send('Send me that 👍 reaction, dude')
 
         def check(reaction, user):
             return user == message.author and str(reaction.emoji) == '👍'
