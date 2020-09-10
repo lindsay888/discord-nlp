@@ -38,7 +38,7 @@ async def on_message(message):
 
     if message.content.startswith('$hello'):
 #         print('this one')
-        await message.channel.send('Hello!')
+        await message.channel.send('Hello dude!')
     
     if message.content.startswith('$thumb'):
         channel = message.channel
